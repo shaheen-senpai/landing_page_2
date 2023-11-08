@@ -6,6 +6,7 @@ favicon: /-/shaheen-senpai.github.io/landing_page_2/favicon.ico
 -- fastn.dependency: fastn-community.github.io/doc-site as doc-site
 -- fastn.dependency: fastn-community.github.io/footer
 -- fastn.dependency: fastn-community.github.io/roboto-typography
+-- fastn.dependency: fastn-community.github.io/opensans-typography
 -- fastn.dependency: fastn-community.github.io/dark-flame-cs
 
 -- fastn.auto-import: shaheen-senpai.github.io/landing_page_2/FASTN/ds
@@ -16,4 +17,3 @@ favicon: /-/shaheen-senpai.github.io/landing_page_2/favicon.ico
 
 # Home: index.html
 
-- Right Sidebar Sample: /sidebar/

@@ -1,40 +1,55 @@
--- ds.page: Welcome to doc-site
+-- import: fastn-community.github.io/opensans-typography/assets as OpenSans
+-- import: shaheen-senpai.github.io/landing_page_2/navbar
+
+-- page:
 
 
-⚡️ `doc-site` will help you create a beautiful documentation site in no time.
-
-It provides out-of-the-box documentation features that can be used to create any
-kind of site(personal website, blog, etc).
-
-[Click here](https://fastn-community.github.io/doc-site/) to read doc-site
-documentation.
-
--- ds.h3: 🚀 Fast Track 
-
-Create your first fastn [web-site](https://fastn.com/expander/hello-world/-/build/) 
-project in just 5 minutes!
-
--- ds.h3: 🌟 Whats next?
-
-Create your first page. 
-[Click here to know more](https://fastn-community.github.io/doc-site/components/page/).
-
--- ds.h3: 👀 Want to learn more?
-
-Feel free to check [our expander course](https://fastn.com/expander/) or jump
-into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
 
 
--- ds.h3: 🎯 Used by?
 
-Our all documentation sites uses this `doc-site` theme.
 
-- [fastn.com](https://fastn.com/home/)
-- [FifthTry.com](https://www.fifthtry.com/)
 
--- ds.h2: Learn fastn and become a pro?
 
-You are one click away, just check [our documentation](https://fastn.com/) and 
-dont forget to jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
+-- component page:
 
--- end: ds.page
+-- ftd.column:
+width: fill-container
+height if {ftd.device == "desktop"}: auto
+height if {ftd.device == "mobile"}: auto
+css: $assets.files.style.main.css
+classes: html
+
+
+-- ftd.column:
+width: fill-container
+height: auto
+height if {ftd.device == "mobile"}: auto
+
+;; start of page
+
+
+-- navbar.header: 
+logo: $assets.files.assets.rocket.svg
+logo-text: LOGO
+cta-text-1: HOME
+cta-text-2: ABOUT
+cta-text-3: CONTACT
+cta-link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cta-link-2: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cta-link-3: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+
+
+
+
+
+
+
+
+
+;; end of page 
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: page
