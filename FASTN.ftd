@@ -7,7 +7,10 @@ favicon: /-/shaheen-senpai.github.io/landing_page_2/favicon.ico
 -- fastn.dependency: fastn-community.github.io/footer
 -- fastn.dependency: fastn-community.github.io/roboto-typography
 -- fastn.dependency: fastn-community.github.io/opensans-typography
+-- fastn.dependency: shaheen-senpai.github.io/limelight-font
 -- fastn.dependency: fastn-community.github.io/dark-flame-cs
+-- fastn.dependency: shaheen-senpai.github.io/fira-code
+
 
 -- fastn.auto-import: shaheen-senpai.github.io/landing_page_2/FASTN/ds
 -- fastn.auto-import: shaheen-senpai.github.io/landing_page_2/assets

@@ -1,5 +1,6 @@
--- import: fastn-community.github.io/opensans-typography/assets as OpenSans
+-- import: shaheen-senpai.github.io/limelight-font/assets as limelight-font-assets
 -- import: shaheen-senpai.github.io/landing_page_2/navbar
+-- import: shaheen-senpai.github.io/landing_page_2/lib
 
 -- page:
 
@@ -28,6 +29,7 @@ height if {ftd.device == "mobile"}: auto
 ;; start of page
 
 
+;; navbar component
 -- navbar.header: 
 logo: $assets.files.assets.rocket.svg
 logo-text: LOGO
@@ -37,9 +39,19 @@ cta-text-3: CONTACT
 cta-link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
 cta-link-2: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
 cta-link-3: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+;; navbar end
 
 
 
+
+
+;; home component
+-- lib.home: Unleash Your Productivity Powerhouse
+button-1: Get Started
+button-1-url: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+button-2: Learn More
+button-2-url: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+;; home end
 
 
 
