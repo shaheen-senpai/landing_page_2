@@ -246,7 +246,7 @@ link: $navbar-dropdown.cta-link-3
 
 
 -- ftd.image: 
-src: $assets.files.images.cross.svg
+src: $assets.files.assets.cross.svg
 height.fixed.px: 30
 margin-top.px: 30
 margin-right.px: 100
