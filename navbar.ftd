@@ -15,7 +15,7 @@ optional string cta-link-3:
 -- ftd.row:
 width: fill-container
 height: hug-content
-sticky: true
+;; sticky: true
 anchor: window
 
 -- ftd.column:
