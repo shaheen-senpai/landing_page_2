@@ -1,0 +1,154 @@
+-- import: shaheen-senpai.github.io/limelight-font/assets as limelight-font-assets
+-- import: shaheen-senpai.github.io/fira-code/assets as fira-code-assets
+
+
+
+-- component home:
+caption title: 
+string button-1: 
+string button-2:
+string button-1-url:
+string button-2-url:
+boolean $button-1-hover: false
+boolean $button-2-hover: false
+
+
+-- ftd.column:
+width: fill-container
+height.fixed.vh: 100
+min-height.fixed.px: 600
+height.fixed.vh if {ftd.device == "mobile"}: 100
+background.solid: #f28482
+align-content: center
+padding-horizontal.percent: 25
+
+
+-- ftd.text: $home.title
+role: $limelight-font-size-72-400
+color: #000
+text-align: center
+
+
+-- ftd.row:
+spacing.fixed.px: 20
+margin-top.percent: 10
+
+-- ftd.text: $home.button-1
+role: $fira-code-size-16-400
+color: #000
+text-align: center
+background.solid: #fff
+padding-vertical.px: 12
+padding-horizontal.px: 32
+border-radius.px: 50
+background.solid if {home.button-1-hover}: #000
+color if {home.button-1-hover}: #fff
+$on-mouse-enter$: $ftd.set-bool($a = $home.button-1-hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $home.button-1-hover, v = false)
+link: $home.button-1-url
+
+-- ftd.text: $home.button-2
+role: $fira-code-size-16-400
+color: #000
+text-align: center
+background.solid: #fff
+padding-vertical.px: 12
+padding-horizontal.px: 32
+border-radius.px: 50
+background.solid if {home.button-2-hover}: #000
+color if {home.button-2-hover}: #fff
+$on-mouse-enter$: $ftd.set-bool($a = $home.button-2-hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $home.button-2-hover, v = false)
+link: $home.button-2-url
+
+-- end: ftd.row
+
+
+-- end: ftd.column
+
+-- end: home
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- ftd.type limelight-font-size-12-desktop:
+size.px: 12
+weight: 400
+font-family: $limelight-font-assets.fonts.Limelight
+
+
+-- ftd.type limelight-font-size-12-mobile:
+size.px: 12
+weight: 400
+font-family: $limelight-font-assets.fonts.Limelight
+
+-- ftd.responsive-type limelight-font-size-12-400:
+desktop: $limelight-font-size-12-desktop
+mobile: $limelight-font-size-12-mobile
+
+
+
+
+
+
+-- ftd.type limelight-font-size-72-desktop:
+size.px: 72
+weight: 400
+font-family: $limelight-font-assets.fonts.Limelight
+
+
+-- ftd.type limelight-font-size-72-mobile:
+size.px: 42
+weight: 400
+font-family: $limelight-font-assets.fonts.Limelight
+
+-- ftd.responsive-type limelight-font-size-72-400:
+desktop: $limelight-font-size-72-desktop
+mobile: $limelight-font-size-72-mobile
+
+
+
+
+
+
+-- ftd.type fira-code-size-16-desktop:
+size.px: 16
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+
+-- ftd.type fira-code-size-16-mobile:
+size.px: 16
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+-- ftd.responsive-type fira-code-size-16-400:
+desktop: $fira-code-size-16-desktop
+mobile: $fira-code-size-16-mobile
