@@ -88,7 +88,7 @@ margin-horizontal.px: 20
 align-self: center
 spacing: space-between
 border-radius.px: 20
-background.solid: #000
+background.solid: #0d0d0d
     
 -- ftd.image:
 src: $header-desktop.logo
