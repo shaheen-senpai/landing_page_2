@@ -36,11 +36,10 @@ logo-text: LOGO
 cta-text-1: HOME
 cta-text-2: ABOUT
 cta-text-3: CONTACT
-cta-link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cta-link-1: index.html
 cta-link-2: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
 cta-link-3: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
 ;; navbar end
-
 
 
 
@@ -52,6 +51,46 @@ button-1-url: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
 button-2: Learn More
 button-2-url: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
 ;; home end
+
+
+
+
+-- ftd.column:
+width: fill-container
+height: auto
+background.solid: #000
+align-content: center
+
+;; hero component
+-- lib.hero-1: Revolutionary Task Management
+cover: $assets.files.assets.h1.webp
+
+    Our app eliminates distractions and organizes your tasks more efficiently, making you unstoppable.
+;; hero end
+
+
+;; hero component
+-- lib.hero-3: Collaborate Like Never Before
+cover: $assets.files.assets.h2.webp
+
+    Share projects, delegate tasks, and communicate with team members effortlessly.
+;; hero end
+
+
+
+;; hero component
+-- lib.hero-2: Ready ?
+cta-button-1: Button
+link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cta-button-2: Button
+link-2: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+
+    It’s time to boost your productivity and achieve your goals faster than ever.
+;; hero end
+
+
+-- end: ftd.column
+
 
 
 
