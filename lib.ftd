@@ -357,7 +357,6 @@ padding-horizontal.px: 100
 padding-vertical.px: 96
 background.solid: #000
 
-
 -- ftd.text: $hero-2.headline
 margin-bottom.px: 16
 role: $limelight-font-size-38-400
@@ -377,11 +376,11 @@ text-align: center
 padding-vertical.px: 8
 padding-horizontal.px: 24
 border-radius.px: 5
-background.solid: $inherited.colors.background.base
-background.solid if {hero-2.is-active-1}: $inherited.colors.cta-primary.hover
+background.solid: #58BFA5
+background.solid if {hero-2.is-active-1}: #0F6FFF
 $on-mouse-enter$: $ftd.set-bool($a = $hero-2.is-active-1, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $hero-2.is-active-1, v = false)
-color: $inherited.colors.border
+color: #000
 link: $hero-2.link-1
 
 -- ftd.text: $hero-2.cta-button-2
@@ -391,15 +390,14 @@ padding-vertical.px: 8
 padding-horizontal.px: 24
 margin-left.px: 16
 border-radius.px: 5
-background.solid: $inherited.colors.background.base
-background.solid if {hero-2.is-active-2}: $inherited.colors.cta-primary.hover
+background.solid: #fff
+background.solid if {hero-2.is-active-2}: #f28482
 $on-mouse-enter$: $ftd.set-bool($a = $hero-2.is-active-2, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $hero-2.is-active-2, v = false)
-color: $inherited.colors.border
+color: #000
 link: $hero-2.link-2
 
 -- end: ftd.row
-
 
 -- end: ftd.column
 
@@ -412,67 +410,115 @@ height: hug-content
 align-content: center
 padding-horizontal.px: 15
 padding-vertical.px: 20
-background.solid: $inherited.colors.cta-secondary.base
+background.solid: #000
 
 -- ftd.text: $hero-2.headline
 margin-bottom.px: 16
-role: $inherited.types.heading-medium
-color: $inherited.colors.border
-
-
+role: $limelight-font-size-38-400
+color: #f28482
 
 -- ftd.text: $hero-2.content
 margin-bottom.px: 32
-role: $inherited.types.copy-regular
-color: $inherited.colors.border
+role: $fira-code-size-16-400
+color: #f28482
+text-align: center
 
 
--- ftd.row:
+-- ftd.column:
 margin-bottom.px: 32
+width: fill-container
+spacing.fixed.px: 20
+padding.px: 20
 
 -- ftd.text: $hero-2.cta-button-1
+width: fill-container
 role: $inherited.types.label-large
 text-align: center
 padding-vertical.px: 8
 padding-horizontal.px: 24
 border-radius.px: 5
-background.solid: $inherited.colors.background.base
-background.solid if {hero-2.is-active-1}: $inherited.colors.cta-primary.hover
+background.solid: #58BFA5
+background.solid if {hero-2.is-active-1}: #0F6FFF
 $on-mouse-enter$: $ftd.set-bool($a = $hero-2.is-active-1, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $hero-2.is-active-1, v = false)
-color: $inherited.colors.border
+color: #000
 link: $hero-2.link-1
 
 -- ftd.text: $hero-2.cta-button-2
+width: fill-container
 role: $inherited.types.label-large
 text-align: center
 padding-vertical.px: 8
 padding-horizontal.px: 24
-margin-left.px: 16
 border-radius.px: 5
-background.solid: $inherited.colors.background.base
-background.solid if {hero-2.is-active-2}: $inherited.colors.cta-primary.hover
+background.solid: #fff
+background.solid if {hero-2.is-active-2}: #f28482
 $on-mouse-enter$: $ftd.set-bool($a = $hero-2.is-active-2, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $hero-2.is-active-2, v = false)
-color: $inherited.colors.border
+color: #000
 link: $hero-2.link-2
 
--- end: ftd.row
+-- end: ftd.column
 
 -- end: ftd.column
 
 
-
 -- end: ftd.column
-
-
-
-
-
-
-
 
 -- end: hero-2
+
+
+
+
+
+
+
+
+
+
+
+-- component card:
+ftd.image-src cover:
+caption headline:
+body content:
+
+-- ftd.column:
+width if {ftd.device == "mobile"}: fill-container 
+width.fixed.vw if {ftd.device == "desktop"}: 30 
+height.fixed.vw if {ftd.device == "mobile"}: 90
+height.fixed.vw if {ftd.device == "desktop"}: 30
+background.solid: #0D0D0D
+align-content: center
+spacing.fixed.px: 20
+padding.px: 20
+border-radius.px: 20
+
+-- ftd.image:
+width.fixed.percent: 20
+src: $card.cover
+
+-- ftd.text: $card.headline
+role: $limelight-font-size-12-400
+color: #fff
+
+-- ftd.text: $card.content
+role: $fira-code-size-16-400
+color: #f28482
+text-align: center
+
+
+
+-- end: ftd.column
+
+-- end: card
+
+
+
+
+
+
+
+
 
 
 

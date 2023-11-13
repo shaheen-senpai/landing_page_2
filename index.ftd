@@ -80,16 +80,46 @@ cover: $assets.files.assets.h2.webp
 
 ;; hero component
 -- lib.hero-2: Ready ?
-cta-button-1: Button
+cta-button-1: Try for Free
 link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
-cta-button-2: Button
+cta-button-2: See Plans
 link-2: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
 
     It’s time to boost your productivity and achieve your goals faster than ever.
 ;; hero end
 
-
 -- end: ftd.column
+
+
+
+
+-- ftd.row:
+width: fill-container
+align-content: center
+background.solid: #000
+spacing.fixed.px: 90
+padding-horizontal.percent: 10
+padding-bottom.percent: 5
+wrap: true
+
+;; card component
+-- lib.card: TechForce
+cover: $assets.files.assets.user.svg
+
+    This app has truly revolutionized the way we work, making us more efficient and focused.
+;; card end
+
+
+;; card component
+-- lib.card: InnovateHub
+cover: $assets.files.assets.user.svg
+
+   Our team productivity skyrocketed after adopting this app, and we can’t imagine going back.
+;; card end
+
+-- end: ftd.row
+
+
 
 
 
