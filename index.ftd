@@ -77,7 +77,6 @@ cover: $assets.files.assets.h2.webp
 ;; hero end
 
 
-
 ;; hero component
 -- lib.hero-2: Ready ?
 cta-button-1: Try for Free
@@ -122,8 +121,14 @@ cover: $assets.files.assets.user.svg
 
 
 
-
-
+;; footer component
+-- lib.footer:
+footer-text: © 2023 All rights reserved.
+facebook-link: https://facebook.com
+twitter-link: https://twitter.com
+instagram-link: https://instagram.com
+linkedin-link: https://linkedin.com
+;; footer end
 
 
 
