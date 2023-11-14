@@ -2,6 +2,7 @@
 -- import: shaheen-senpai.github.io/fira-code/assets as fira-code-assets
 -- import: shaheen-senpai.github.io/landing_page_2/navbar
 -- import: shaheen-senpai.github.io/landing_page_2/about/lib
+-- import: shaheen-senpai.github.io/landing_page_2/lib as lib2
 -- import: fastnui.trizwit.com/UI-Components/Team/team-1
 -- import: fastnui.trizwit.com/UI-Components/Statistic/statistic-1
 
@@ -66,7 +67,6 @@ padding-vertical.percent: 8
 padding-horizontal.percent: 8
 spacing.fixed.px: 50
 
-
 -- ftd.text: Our Team
 role: $limelight-font-size-38-400
 color: #fff
@@ -82,7 +82,6 @@ width: fill-container
 height: auto
 align-content: center
 wrap: true
-
 
 -- lib.profilecard-a:
 pro-pic: $assets.files.assets.user.svg
@@ -136,6 +135,67 @@ position: Product Manager
 
 
 
+;; blog component
+-- lib.blog: 
+title: The Origin and Mission
+para-1: Our sustainable fashion journey began when our founders, Emily Swift and Jake Nolan, took a wild, soul-searching trip to the Amazon. Surrounded by nature’s beauty, they dreamt of a brand with eco-conscious fabrics and ethical manufacturing practices.
+para-2: Now, with a passionate team and loyal customers, we strive to empower every individual to make a conscious fashion choice that prioritizes the earth, its people, and the future.
+;; blog end
+
+
+
+
+
+-- ftd.column:
+width: fill-container
+height: auto
+background.solid: #000
+padding-vertical.percent: 8
+padding-horizontal.percent: 8
+spacing.fixed.px: 30
+
+
+-- ftd.text: Our Visual Journey
+role: $limelight-font-size-38-400
+color: #f28482
+
+-- ftd.row:
+width: fill-container
+height: auto
+align-content: center
+spacing.fixed.px: 30
+wrap: true
+
+
+;; card component
+-- lib.card:
+cover: $assets.files.assets.card-1.webp
+
+-- lib.card:
+cover: $assets.files.assets.card-2.webp
+
+-- lib.card:
+cover: $assets.files.assets.card-3.webp
+
+-- lib.card:
+cover: $assets.files.assets.card-4.jpeg
+;; card end
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+
+
+
+;; footer component
+-- lib2.footer:
+footer-text: © 2023 All rights reserved.
+facebook-link: https://facebook.com
+twitter-link: https://twitter.com
+instagram-link: https://instagram.com
+linkedin-link: https://linkedin.com
+;; footer end
 
 
 

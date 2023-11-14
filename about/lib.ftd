@@ -183,6 +183,74 @@ color: grey
 
 
 
+-- component blog:
+string title:
+string para-1:
+string para-2:
+
+
+-- ftd.column:
+width: fill-container
+height: auto
+background.solid: #000
+padding-vertical.percent: 8
+padding-horizontal.percent: 8
+spacing.fixed.px: 30
+
+
+-- ftd.text: $blog.title
+role: $limelight-font-size-38-400
+color: #f28482
+
+-- ftd.text: $blog.para-1
+role: $fira-code-size-16-400
+color: #fff
+
+-- ftd.text: $blog.para-2
+role: $fira-code-size-16-400
+color: #fff
+
+-- end: ftd.column
+
+-- end: blog
+
+
+
+
+
+
+
+
+
+
+-- component card:
+ftd.image-src cover:
+
+-- ftd.column:
+width if {ftd.device == "mobile"}: fill-container
+height.fixed.vw if {ftd.device == "mobile"}: 90
+width.fixed.vw if {ftd.device == "desktop"}: 35
+height.fixed.vw if {ftd.device == "desktop"}: 35
+border-radius.px: 20
+background.solid: #f28482
+
+-- ftd.image:
+width: fill-container
+height: fill-container
+padding.px: 3
+border-radius.px: 20
+src: $card.cover
+
+-- end: ftd.column
+
+-- end: card
+
+
+
+
+
+
+
 
 
 
@@ -254,3 +322,21 @@ mobile: $fira-code-size-16-mobile
 
 
 
+
+
+
+
+-- ftd.type limelight-font-size-38-desktop:
+size.px: 38
+weight: 400
+font-family: $limelight-font-assets.fonts.Limelight
+
+
+-- ftd.type limelight-font-size-26-mobile:
+size.px: 26
+weight: 400
+font-family: $limelight-font-assets.fonts.Limelight
+
+-- ftd.responsive-type limelight-font-size-38-400:
+desktop: $limelight-font-size-38-desktop
+mobile: $limelight-font-size-26-mobile
