@@ -219,6 +219,7 @@ spacing: space-between
 background.solid: #fff  
 
 
+
 -- ftd.column:
 width: fill-container
 height: fill-container
@@ -249,7 +250,7 @@ link: $navbar-dropdown.cta-link-3
 src: $assets.files.assets.cross.svg
 height.fixed.px: 30
 margin-top.px: 30
-margin-right.px: 100
+margin-right.px: 50
 z-index: 100
 $on-click$: $ftd.set-bool($a = $menu-open, v = false)
 
