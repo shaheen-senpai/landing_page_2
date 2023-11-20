@@ -552,27 +552,38 @@ link: $footer.facebook-link
 -- ftd.image:
 src: $assets.files.assets.facebook.svg
 height: fill-container
-fit: contain
-;; link: $footer.facebook-link
 
 -- end: ftd.column
 
-
-
--- ftd.image:
-src: $assets.files.assets.twitter.svg
+-- ftd.column:
 height: fill-container
 link: $footer.twitter-link
 
 -- ftd.image:
-src: $assets.files.assets.instagram.svg
+src: $assets.files.assets.twitter.svg
+height: fill-container
+
+-- end: ftd.column
+
+-- ftd.column:
 height: fill-container
 link: $footer.instagram-link
 
 -- ftd.image:
-src: $assets.files.assets.linkedin.svg
+src: $assets.files.assets.instagram.svg
+height: fill-container
+
+-- end: ftd.column
+
+-- ftd.column:
 height: fill-container
 link: $footer.linkedin-link
+
+-- ftd.image:
+src: $assets.files.assets.linkedin.svg
+height: fill-container
+
+-- end: ftd.column
 
 -- end: ftd.row
 
@@ -597,12 +608,12 @@ boolean $hover-email: false
 boolean $hover-subject: false
 boolean $hover-text: false
 boolean $hover-submit: false
-optional integer padding: 132
 
 -- ftd.column:
 width: fill-container
 height: fill-container
-padding-horizontal.px: $contact-1.padding
+padding-horizontal.percent: 8
+background.solid: #000
 spacing: space-evenly
 id: contact-1
 
@@ -616,12 +627,12 @@ align-content if {ftd.device == "mobile"}: center
 
 -- ftd.text: Contact Us
 role: $limelight-font-size-38-400
-color:
+color: #f28482
 margin-top.px if {ftd.device == "mobile"}: 50
 
 -- ftd.text: Drop us an email or use the query form below to know more about us; our Design Trips; the Architecture Open initiatives or just to say Hi.
 role: $fira-code-size-16-400	
-color:
+color: #fff
 margin-bottom.px: 40
 
 -- ftd.text-input:
@@ -630,14 +641,14 @@ width: fill-container
 padding-vertical.px: 8
 padding-horizontal.px: 16
 border-bottom-width.px: 1
-border-color if {contact-1.hover-name}: #f1562a
+border-color if {contact-1.hover-name}: #f28482
 border-color: #000
 type: text
 role: $fira-code-size-16-400
-background.solid: #fff
+background.solid: #0d0d0d
 $on-mouse-enter$: $ftd.set-bool($a = $contact-1.hover-name, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $contact-1.hover-name, v = false)
-color: #f1562a
+color: #f28482
 
 -- ftd.text-input:
 placeholder: Email
@@ -645,14 +656,14 @@ width: fill-container
 padding-vertical.px: 8
 padding-horizontal.px: 16
 border-bottom-width.px: 1
-border-color if {contact-1.hover-email}: #f1562a
+border-color if {contact-1.hover-email}: #f28482
 border-color: #000
 type: text
 role: $fira-code-size-16-400
-background.solid: #fff
+background.solid: #0d0d0d
 $on-mouse-enter$: $ftd.set-bool($a = $contact-1.hover-email, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $contact-1.hover-email, v = false)
-color: #f1562a
+color: #f28482
 
 -- ftd.text-input:
 placeholder: Subject
@@ -660,14 +671,14 @@ width: fill-container
 padding-vertical.px: 8
 padding-horizontal.px: 16
 border-bottom-width.px: 1
-border-color if {contact-1.hover-subject}: #f1562a
+border-color if {contact-1.hover-subject}: #f28482
 border-color: #000
 type: text
 role: $fira-code-size-16-400
-background.solid: #fff
+background.solid: #0d0d0d
 $on-mouse-enter$: $ftd.set-bool($a = $contact-1.hover-subject, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $contact-1.hover-subject, v = false)
-color: #f1562a
+color: #f28482
 
 -- end: ftd.column
 
@@ -681,22 +692,22 @@ margin-top.px: 30
 padding-vertical.px: 8
 padding-horizontal.px: 16
 border-bottom-width.px: 1
-border-color if {contact-1.hover-text}: #f1562a
+border-color if {contact-1.hover-text}: #f28482
 border-color: #000
 type: text
 role: $fira-code-size-16-400
-background.solid: #fff
+background.solid: #0d0d0d
 $on-mouse-enter$: $ftd.set-bool($a = $contact-1.hover-text, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $contact-1.hover-text, v = false)
-color: #f1562a
+color: #f28482
 
 -- ftd.text: SUBMIT
 role: $fira-code-size-16-400
-color: #000
+color: #fff
 margin-top.px: 30
 align-self: end
 margin-right.px: 120
-color if {contact-1.hover-submit}: #f1562a
+color if {contact-1.hover-submit}: #f28482
 $on-mouse-enter$: $ftd.set-bool($a = $contact-1.hover-submit, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $contact-1.hover-submit, v = false)
 
