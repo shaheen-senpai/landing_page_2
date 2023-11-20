@@ -547,25 +547,21 @@ spacing.fixed.px: 20
 
 -- ftd.image:
 src: $assets.files.assets.facebook.svg
-width.fixed.percent: 100
 height.fixed.percent: 100
 link: $footer.facebook-link
 
 -- ftd.image:
 src: $assets.files.assets.twitter.svg
-width.fixed.percent: 100
 height.fixed.percent: 100
 link: $footer.twitter-link
 
 -- ftd.image:
 src: $assets.files.assets.instagram.svg
-width.fixed.percent: 100
 height.fixed.percent: 100
 link: $footer.instagram-link
 
 -- ftd.image:
 src: $assets.files.assets.linkedin.svg
-width.fixed.percent: 100
 height.fixed.percent: 100
 link: $footer.linkedin-link
 

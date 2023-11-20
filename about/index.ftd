@@ -40,8 +40,8 @@ cta-text-1: HOME
 cta-text-2: ABOUT
 cta-text-3: CONTACT
 cta-link-1: index.html
-cta-link-2: /about/
-cta-link-3: /contact/
+cta-link-2: /landing_page_2/about/
+cta-link-3: /landing_page_2/contact/
 ;; navbar end
 
 
