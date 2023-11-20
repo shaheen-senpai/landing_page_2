@@ -154,15 +154,11 @@ align-content: center
 
 -- ftd.text: $profilecard-a.name 
 role: $fira-code-size-16-400
-classes: text
-css: [ $assets.files.style.component-styles.team.css] 
 margin-top.px: 16
 color: #fff
 
 -- ftd.text: $profilecard-a.position
 role: $fira-code-size-16-400
-classes: text
-css: [ $assets.files.style.component-styles.team.css]
 margin-top.px: 5
 color: grey
 
