@@ -37,8 +37,8 @@ cta-text-1: HOME
 cta-text-2: ABOUT
 cta-text-3: CONTACT
 cta-link-1: index.html
-cta-link-2: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
-cta-link-3: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cta-link-2: /about/
+cta-link-3: /contact/
 ;; navbar end
 
 

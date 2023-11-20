@@ -1,0 +1,338 @@
+-- import: shaheen-senpai.github.io/limelight-font/assets as limelight-font-assets
+-- import: shaheen-senpai.github.io/fira-code/assets as fira-code-assets
+
+
+
+
+
+-- component home:
+caption title: 
+string button-1: 
+string button-2:
+string button-1-url:
+string button-2-url:
+boolean $button-1-hover: false
+boolean $button-2-hover: false
+
+
+-- ftd.column:
+width: fill-container
+height.fixed.vh: 100
+height.fixed.vh if {ftd.device == "mobile"}: 100
+background.solid: #f28482
+align-content: center
+padding-horizontal.percent if {ftd.device == "desktop"}: 25
+
+
+-- ftd.text: $home.title
+role: $limelight-font-size-72-400
+color: #000
+text-align: center
+
+
+-- ftd.row:
+if: {ftd.device == "desktop"}
+spacing.fixed.px: 20
+margin-top.percent: 10
+
+-- ftd.text: $home.button-1
+role: $fira-code-size-16-400
+color: #000
+text-align: center
+background.solid: #fff
+padding-vertical.px: 12
+padding-horizontal.px: 32
+border-radius.px: 50
+background.solid if {home.button-1-hover}: #000
+color if {home.button-1-hover}: #fff
+$on-mouse-enter$: $ftd.set-bool($a = $home.button-1-hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $home.button-1-hover, v = false)
+link: $home.button-1-url
+
+-- ftd.text: $home.button-2
+role: $fira-code-size-16-400
+color: #000
+text-align: center
+background.solid: #fff
+padding-vertical.px: 12
+padding-horizontal.px: 32
+border-radius.px: 50
+background.solid if {home.button-2-hover}: #000
+color if {home.button-2-hover}: #fff
+$on-mouse-enter$: $ftd.set-bool($a = $home.button-2-hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $home.button-2-hover, v = false)
+link: $home.button-2-url
+
+-- end: ftd.row
+
+
+-- ftd.column:
+if: {ftd.device == "mobile"}
+width: fill-container
+spacing.fixed.px: 20
+margin-top.percent: 10
+align-content: center
+padding.px: 20
+
+-- ftd.text: $home.button-1
+width: fill-container
+role: $fira-code-size-16-400
+color: #000
+text-align: center
+background.solid: #fff
+padding-vertical.px: 12
+padding-horizontal.px: 32
+border-radius.px: 50
+background.solid if {home.button-1-hover}: #000
+color if {home.button-1-hover}: #fff
+$on-mouse-enter$: $ftd.set-bool($a = $home.button-1-hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $home.button-1-hover, v = false)
+link: $home.button-1-url
+
+-- ftd.text: $home.button-2
+width: fill-container
+role: $fira-code-size-16-400
+color: #000
+text-align: center
+background.solid: #fff
+padding-vertical.px: 12
+padding-horizontal.px: 32
+border-radius.px: 50
+background.solid if {home.button-2-hover}: #000
+color if {home.button-2-hover}: #fff
+$on-mouse-enter$: $ftd.set-bool($a = $home.button-2-hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $home.button-2-hover, v = false)
+link: $home.button-2-url
+
+-- end: ftd.column
+
+
+-- end: ftd.column
+
+-- end: home
+
+
+
+
+
+
+
+
+
+
+-- component profilecard-a:
+ftd.image-src pro-pic:
+string name:
+string position: 
+
+-- ftd.column:
+width.fixed.vw: 24
+height.fixed.vw: 8
+min-height.fixed.px: 96
+min-width.fixed.px: 336
+border-width.px: 1
+border-radius.px: 12
+border-color: grey
+margin.px: 8
+
+-- ftd.row:
+width: fill-container
+height: fill-container
+
+-- ftd.image:
+src: $profilecard-a.pro-pic
+width.fixed.px: 75
+height.fixed.px: 75
+border-radius.percent: 50
+margin.px: 16
+align-self: center
+
+-- ftd.column:
+margin-top.px: 16
+margin-left.px: 16
+align-content: center
+
+-- ftd.text: $profilecard-a.name 
+role: $fira-code-size-16-400
+margin-top.px: 16
+color: #fff
+
+-- ftd.text: $profilecard-a.position
+role: $fira-code-size-16-400
+margin-top.px: 5
+color: grey
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: profilecard-a
+
+
+
+
+
+
+
+
+
+
+-- component blog:
+string title:
+string para-1:
+string para-2:
+
+
+-- ftd.column:
+width: fill-container
+height: auto
+background.solid: #000
+padding-vertical.percent: 8
+padding-horizontal.percent: 8
+spacing.fixed.px: 30
+
+
+-- ftd.text: $blog.title
+role: $limelight-font-size-38-400
+color: #f28482
+
+-- ftd.text: $blog.para-1
+role: $fira-code-size-16-400
+color: #fff
+
+-- ftd.text: $blog.para-2
+role: $fira-code-size-16-400
+color: #fff
+
+-- end: ftd.column
+
+-- end: blog
+
+
+
+
+
+
+
+
+
+
+-- component card:
+ftd.image-src cover:
+
+-- ftd.column:
+width if {ftd.device == "mobile"}: fill-container
+height.fixed.vw if {ftd.device == "mobile"}: 90
+width.fixed.vw if {ftd.device == "desktop"}: 35
+height.fixed.vw if {ftd.device == "desktop"}: 35
+border-radius.px: 20
+background.solid: #f28482
+
+-- ftd.image:
+width: fill-container
+height: fill-container
+padding.px: 3
+border-radius.px: 20
+src: $card.cover
+
+-- end: ftd.column
+
+-- end: card
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- ftd.type limelight-font-size-12-desktop:
+size.px: 12
+weight: 400
+font-family: $limelight-font-assets.fonts.Limelight
+
+
+-- ftd.type limelight-font-size-12-mobile:
+size.px: 12
+weight: 400
+font-family: $limelight-font-assets.fonts.Limelight
+
+-- ftd.responsive-type limelight-font-size-12-400:
+desktop: $limelight-font-size-12-desktop
+mobile: $limelight-font-size-12-mobile
+
+
+
+
+
+
+-- ftd.type limelight-font-size-72-desktop:
+size.px: 72
+weight: 400
+font-family: $limelight-font-assets.fonts.Limelight
+
+
+-- ftd.type limelight-font-size-72-mobile:
+size.px: 42
+weight: 400
+font-family: $limelight-font-assets.fonts.Limelight
+
+-- ftd.responsive-type limelight-font-size-72-400:
+desktop: $limelight-font-size-72-desktop
+mobile: $limelight-font-size-72-mobile
+
+
+
+
+
+
+-- ftd.type fira-code-size-16-desktop:
+size.px: 16
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+
+-- ftd.type fira-code-size-16-mobile:
+size.px: 16
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+-- ftd.responsive-type fira-code-size-16-400:
+desktop: $fira-code-size-16-desktop
+mobile: $fira-code-size-16-mobile
+
+
+
+
+
+
+
+-- ftd.type limelight-font-size-38-desktop:
+size.px: 38
+weight: 400
+font-family: $limelight-font-assets.fonts.Limelight
+
+
+-- ftd.type limelight-font-size-26-mobile:
+size.px: 26
+weight: 400
+font-family: $limelight-font-assets.fonts.Limelight
+
+-- ftd.responsive-type limelight-font-size-38-400:
+desktop: $limelight-font-size-38-desktop
+mobile: $limelight-font-size-26-mobile
