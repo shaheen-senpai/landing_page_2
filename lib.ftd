@@ -545,10 +545,18 @@ margin-bottom.px: 20
 height.fixed.px: 25
 spacing.fixed.px: 20
 
+-- ftd.column:
+height: fill-container
+
 -- ftd.image:
 src: $assets.files.assets.facebook.svg
 height: fill-container
+fit: contain
 link: $footer.facebook-link
+
+-- end: ftd.column
+
+
 
 -- ftd.image:
 src: $assets.files.assets.twitter.svg
@@ -570,6 +578,155 @@ link: $footer.linkedin-link
 -- end: ftd.row
 
 -- end: footer
+
+
+
+
+
+
+
+
+
+
+
+
+-- component contact-1:
+boolean $hover-name: false
+boolean $hover-email: false
+boolean $hover-subject: false
+boolean $hover-text: false
+boolean $hover-submit: false
+optional integer padding: 132
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+padding-horizontal.px: $contact-1.padding
+spacing: space-evenly
+id: contact-1
+
+
+
+-- ftd.column:
+width: fill-container
+padding-right.px if {ftd.device == "desktop"}: 120
+spacing.fixed.px: 20
+align-content if {ftd.device == "mobile"}: center
+
+-- ftd.text: Contact Us
+role: $limelight-font-size-38-400
+color:
+margin-top.px if {ftd.device == "mobile"}: 50
+
+-- ftd.text: Drop us an email or use the query form below to know more about us; our Design Trips; the Architecture Open initiatives or just to say Hi.
+role: $fira-code-size-16-400	
+color:
+margin-bottom.px: 40
+
+-- ftd.text-input:
+placeholder: Name
+width: fill-container
+padding-vertical.px: 8
+padding-horizontal.px: 16
+border-bottom-width.px: 1
+border-color if {contact-1.hover-name}: #f1562a
+border-color: #000
+type: text
+role: $fira-code-size-16-400
+background.solid: #fff
+$on-mouse-enter$: $ftd.set-bool($a = $contact-1.hover-name, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $contact-1.hover-name, v = false)
+color: #f1562a
+
+-- ftd.text-input:
+placeholder: Email
+width: fill-container
+padding-vertical.px: 8
+padding-horizontal.px: 16
+border-bottom-width.px: 1
+border-color if {contact-1.hover-email}: #f1562a
+border-color: #000
+type: text
+role: $fira-code-size-16-400
+background.solid: #fff
+$on-mouse-enter$: $ftd.set-bool($a = $contact-1.hover-email, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $contact-1.hover-email, v = false)
+color: #f1562a
+
+-- ftd.text-input:
+placeholder: Subject
+width: fill-container
+padding-vertical.px: 8
+padding-horizontal.px: 16
+border-bottom-width.px: 1
+border-color if {contact-1.hover-subject}: #f1562a
+border-color: #000
+type: text
+role: $fira-code-size-16-400
+background.solid: #fff
+$on-mouse-enter$: $ftd.set-bool($a = $contact-1.hover-subject, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $contact-1.hover-subject, v = false)
+color: #f1562a
+
+-- end: ftd.column
+
+
+-- ftd.text-input:
+width: fill-container
+height.fixed.px: 110
+placeholder: Add text here
+multiline: true
+margin-top.px: 30
+padding-vertical.px: 8
+padding-horizontal.px: 16
+border-bottom-width.px: 1
+border-color if {contact-1.hover-text}: #f1562a
+border-color: #000
+type: text
+role: $fira-code-size-16-400
+background.solid: #fff
+$on-mouse-enter$: $ftd.set-bool($a = $contact-1.hover-text, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $contact-1.hover-text, v = false)
+color: #f1562a
+
+-- ftd.text: SUBMIT
+role: $fira-code-size-16-400
+color: #000
+margin-top.px: 30
+align-self: end
+margin-right.px: 120
+color if {contact-1.hover-submit}: #f1562a
+$on-mouse-enter$: $ftd.set-bool($a = $contact-1.hover-submit, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $contact-1.hover-submit, v = false)
+
+-- end: ftd.column
+
+-- end: contact-1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

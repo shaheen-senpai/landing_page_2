@@ -121,6 +121,13 @@ cover: $assets.files.assets.user.svg
 
 
 
+
+-- lib.contact-1:
+
+
+
+
+
 ;; footer component
 -- lib.footer:
 footer-text: © 2023 All rights reserved.
@@ -129,6 +136,7 @@ twitter-link: https://twitter.com
 instagram-link: https://instagram.com
 linkedin-link: https://linkedin.com
 ;; footer end
+
 
 
 
