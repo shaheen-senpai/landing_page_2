@@ -547,12 +547,13 @@ spacing.fixed.px: 20
 
 -- ftd.column:
 height: fill-container
+link: $footer.facebook-link
 
 -- ftd.image:
 src: $assets.files.assets.facebook.svg
 height: fill-container
 fit: contain
-link: $footer.facebook-link
+;; link: $footer.facebook-link
 
 -- end: ftd.column
 
