@@ -533,10 +533,10 @@ width: fill-container
 padding.percent: 10
 background.solid: #000
 spacing: space-between
-wrap: true
+;; wrap: true
 
 -- ftd.text: $footer.footer-text
-width.fixed.percent if {ftd.device == "mobile"}: 100
+;; width.fixed.percent if {ftd.device == "mobile"}: 100
 role: $fira-code-size-16-400
 color: #fff
 margin-bottom.px: 20
