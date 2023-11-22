@@ -16,7 +16,7 @@ boolean $button-2-hover: false
 -- ftd.column:
 width: fill-container
 height.fixed.vh: 100
-min-height.fixed.px: 600
+;;min-height.fixed.px: 600
 height.fixed.vh if {ftd.device == "mobile"}: 100
 background.solid: #f28482
 align-content: center
